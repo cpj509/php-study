@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data"><!--파일 업로드시 multipart/form-data로 지정 필수.-->
+        <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+        <input type="file" name="userfile">
+        <input type="submit" value="upload">
+    </form>
+</body>
+</html>
