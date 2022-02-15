@@ -7,7 +7,7 @@
 <body>
     <?php
     ini_set("display_errors", "1"); //php.ini의 display_errors option을 on. 트러블슈팅용.
-    $uploadDir = 'D:\Bitnami\wampstack-8.1.2-0\apache2\htdocs\upload\file\\';
+    $uploadDir = 'D:\Bitnami\wampstack-8.1.2-0\apache2\htdocs\basic\upload\file\\';
     $uploadFileName = $uploadDir.basename($_FILES['userfile']['name']); //basename은 업로드 한 파일의 경로나 확장자를 제거하고 파일명만 남김. 보안용도.
     echo '<pre>';
     if(move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadFileName)){
