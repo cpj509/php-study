@@ -15,7 +15,6 @@ mysqli_close($conn);
         <style type="text/css">
             body {
                 font-size: 0.8em;
-                font-family: dotum;
                 line-height: 1.6em;
             }
             header {
